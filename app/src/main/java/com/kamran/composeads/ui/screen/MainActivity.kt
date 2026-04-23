@@ -9,6 +9,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -123,15 +124,16 @@ fun MainScreen(modifier: Modifier = Modifier) {
                 ),
             ) {
                 Text(
-                    text = "this is a Test Card",
+                    text = "Click for Interstitial Ad",
                     modifier = Modifier
                         .fillMaxWidth()
+                        .fillMaxHeight()
                         .wrapContentSize(Alignment.Center),
                     color = Color.Green,
                     style = MaterialTheme.typography.bodyLarge
                 )
             }
-            NativeAdView(NativeAdId, modifier = Modifier.fillMaxWidth())
+            NativeAdView(NativeAdId, modifier = Modifier.fillMaxWidth().padding(16.dp))
         }
 
         // Banner pinned at the bottom (already preview-friendly)
