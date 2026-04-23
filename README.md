@@ -1,6 +1,6 @@
 # 📱 Jetpack Compose Ads Implementation Sample
 
-![App Banner](./screenshots/home.jpeg)
+![App Banner](./screenshot/home.jpeg)
 
 A simple Android sample project demonstrating how to integrate **Google Mobile Ads (AdMob)** in a Jetpack Compose app.
 
@@ -19,6 +19,8 @@ A simple Android sample project demonstrating how to integrate **Google Mobile A
 ### 🔹 Ads SDK
 ```kotlin
 implementation("com.google.android.gms:play-services-ads:25.2.0")
-
+```
 ### 🔹 for image loading
+``` kotlin
 implementation("io.coil-kt:coil-compose:2.7.0"
+```
